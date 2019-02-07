@@ -1,0 +1,11 @@
+DELETE FROM t1  WHERE s11 > ANY (SELECT COUNT(*)  FROM t2    WHERE NOT EXISTS     (SELECT * FROM t3      WHERE ROW(5*t2.s1,77)=       (SELECT 50,11*s1 FROM t4 UNION SELECT 50,77 FROM  (SELECT * FROM t5) AS t5)));
+
+SELECT first_name,last_name, salary FROM emp_details WHERE salary >(SELECT salary FROM emp_details WHERE first_name='Alexander');
+
+SELECT employee_id, last_name,  (CASE WHEN department_id=( SELECT department_id from departments WHERE location_id=2500)  THEN 'Canada' ELSE 'USA' END)  location FROM employees;
+
+SELECT employee_id,first_name,last_name,salary FROM employees WHERE salary > (SELECT AVG(SALARY) FROM employees); 
+
+SELECT department_id, AVG(SALARY) FROM EMPLOYEES GROUP BY department_id HAVING AVG(SALARY)>=ALL (SELECT AVG(SALARY) FROM EMPLOYEES GROUP BY department_id);
+
+SELECT productname, buyprice FROM products AS p1 WHERE buyprice > ( SELECT AVG(buyprice) FROM products WHERE productline = p1.productline)

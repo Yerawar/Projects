@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Help - Detecting And Resolving Firewall Policy Anomalies"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Component id="jPanel2" pref="720" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="71" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" pref="268" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Sylfaen" size="18" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="0" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Conclusion"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Conclusion&#xa;&#xa;Resolution of anomalies from firewall policy rules is vital to the network&#x2019;s security&#xa;as anomalies can introduce unwarranted and hard to find security holes. Our&#xa;work presents an automated process for detecting and resolving such anomalies.&#xa;The anomaly resolution algorithm and the merging algorithm should produce&#xa;a compact yet anomaly free rule set that would be easier to understand andDetection &#xa;and Resolution of Anomalies in Firewall Policy Rules 29&#xa;maintain. This algorithms can also be integrated into policy advisor and editing&#xa;tools. The paper also establishes the complete definition and analysis of the&#xa;relations between rules.&#xa;In future, this analysis can be extended to distributed firewalls. Also, we&#xa;propose to use data mining techniques to analyze the log files of the firewall &#xa;and&#xa;discover other kinds of anomalies. These techniques should be applied only after&#xa;the rules have been made free from anomaly by applying the algorithms in this&#xa;paper. That way it would be ensured that not only syntactic but also semantic&#xa;mistakes in the rules will be captured. Research in this direction has already&#xa;started.&#xa;&#xa;Resolution of anomalies from firewall policy rules is vital to the network&#x2019;s &#xa;security&#xa;as anomalies can introduce unwarranted and hard to find security holes. Our&#xa;work presents an automated process for detecting and resolving such anomalies.&#xa;The anomaly resolution algorithm and the merging algorithm should produce&#xa;a compact yet anomaly free rule set that would be easier to understand andDetection &#xa;and Resolution of Anomalies in Firewall Policy Rules 29&#xa;maintain. This algorithms can also be integrated into policy advisor and editing&#xa;tools. The paper also establishes the complete definition and analysis of the&#xa;relations between rules.&#xa;In future, this analysis can be extended to distributed firewalls. Also, we&#xa;propose to use data mining techniques to analyze the log files of the firewall &#xa;and&#xa;discover other kinds of anomalies. These techniques should be applied only after&#xa;the rules have been made free from anomaly by applying the algorithms in this&#xa;paper. That way it would be ensured that not only syntactic but also semantic&#xa;mistakes in the rules will be captured. Research in this direction has already&#xa;started.&#xa;&#xa;Resolution of anomalies from firewall policy rules is vital to the network&#x2019;s &#xa;security&#xa;as anomalies can introduce unwarranted and hard to find security holes. Our&#xa;work presents an automated process for detecting and resolving such anomalies.&#xa;The anomaly resolution algorithm and the merging algorithm should produce&#xa;a compact yet anomaly free rule set that would be easier to understand and&#xa;Detection and Resolution of Anomalies in Firewall Policy Rules 29&#xa;maintain. This algorithms can also be integrated into policy advisor and editing&#xa;tools. The paper also establishes the complete definition and analysis of the&#xa;relations between rules.&#xa;In future, this analysis can be extended to distributed firewalls. Also, we&#xa;propose to use data mining techniques to analyze the log files of the firewall and&#xa;discover other kinds of anomalies. These techniques should be applied only after&#xa;the rules have been made free from anomaly by applying the algorithms in this&#xa;paper. That way it would be ensured that not only syntactic but also semantic&#xa;mistakes in the rules will be captured. Research in this direction has already&#xa;started.&#xa;&#xa;&#xa;Resolution of anomalies from firewall policy rules is vital to the network&#x2019;s security&#xa;as anomalies can introduce unwarranted and hard to find security holes. Our&#xa;work presents an automated process for detecting and resolving such anomalies.&#xa;The anomaly resolution algorithm and the merging algorithm should produce&#xa;a compact yet anomaly free rule set that would be easier to understand andDetection &#xa;and Resolution of Anomalies in Firewall Policy Rules 29&#xa;maintain. This algorithms can also be integrated into policy advisor and editing&#xa;tools. The paper also establishes the complete definition and analysis of the&#xa;relations between rules.&#xa;In future, this analysis can be extended to distributed firewalls. Also, we&#xa;propose to use data mining techniques to analyze the log files of the firewall and&#xa;discover other kinds of anomalies. These techniques should be applied only after&#xa;the rules have been made free from anomaly by applying the algorithms in this&#xa;paper. That way it would be ensured that not only syntactic but also semantic&#xa;mistakes in the rules will be captured. Research in this direction has already&#xa;started."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Sylfaen" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="33" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CLOSE"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

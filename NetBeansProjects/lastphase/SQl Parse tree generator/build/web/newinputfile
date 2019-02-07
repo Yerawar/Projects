@@ -1,0 +1,39 @@
+SELECT * FROM  `tblcustomer` c , tblproductpurchase p ORDER BY c.id
+
+SELECT * FROM  `tblcustomer` c , tblproductpurchase p
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer inner join tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer CROSS JOIN tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer FULL OUTER JOIN tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer RIGHT OUTER JOIN tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer LEFT OUTER JOIN tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+select tblcustomer.first_name,tblproductpurchase.customer_id from tblcustomer INNER JOIN tblproductpurchase on  tblcustomer.id = tblproductpurchase.id order by tblcustomer.first_name;
+
+SELECT c.first_name FROM  `tblcustomer` c , tblproductpurchase p where c.id = p.customer_id ANd p.item_qty = 10
+
+SELECT max(p.item_qty) FROM  `tblcustomer` c , tblproductpurchase p where c.id = p.customer_id ANd p.item_qty = 10
+
+SELECT p.item_qty FROM  `tblcustomer` c , tblproductpurchase p where c.id = p.customer_id AND p.item_qty = 10 GROUP BY p.item_qty
+
+(SELECT customer_code FROM tblcustomer) UNION (SELECT item_name FROM tblproductpurchase)
+
+(SELECT customer_code FROM tblcustomer) UNION ALL (SELECT item_name FROM tblproductpurchase)
+
+SELECT customer_code FROM tblcustomer ORDER BY  customer_code
+
+SELECT customer_code FROM tblcustomer ORDER BY  customer_code LIMIT 0,3
+
+SELECT DISTINCT first_name FROM tblcustomer;
+
+SELECT * FROM tblcustomer WHERE first_name LIKE 's%';
+
+SELECT * FROM tblcustomer WHERE first_name LIKE 's%' GROUP BY first_name  ; 
+
+SELECT * FROM tblcustomer WHERE first_name LIKE 's%' ORDER  BY first_name  ; 
+
+SELECT * FROM tblcustomer  GROUP BY  first_name  ; 

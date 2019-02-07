@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 14, 2014, 9:19:55 PM
+    Author     : yuvraj
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+font-family: cambria;
+}
+.wrapper{
+    width: 100%;
+    /*border: solid 0px gray;*/
+    margin: 0 auto;
+    height: auto;
+}
+.banner{
+    min-height: 160px;
+    margin: 0 auto;
+}
+.height{
+    width: 960px;
+    height: 120px;
+    border-bottom: solid 0px gray;
+}
+.contain{
+    margin: 0 auto;
+    width: 98%;
+    margin-top: -1px;
+    border: solid 0px gray;
+    height: 500px;
+}
+.menu{
+    width: 980px;
+    margin: 0 auto;
+}
+.menu table tr td{
+    padding: 15px;
+}
+.menu table tr td a{
+    text-decoration: none;
+}
+.menu table {
+    border-collapse: collapse;
+}
